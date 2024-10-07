@@ -1,12 +1,31 @@
+import { PluginAPI } from "tailwindcss/types/config";
 import type { Config } from "tailwindcss";
 
-// function addVariablesForColors({ addBase, theme }: any) {
-//   let allColors = flattenColorPalette(theme("colors"));
-//   let newVars = Object.fromEntries(
-//     Object.entries(allColors).map(([key, val]) => [`--${key}`, val])
-//   );
- 
+function addVariableForColors({ addBase, theme }: PluginAPI) {
+  const allColors = theme('colors', {}) || {};
+  const newVars: Record<string, string> = {};
 
+  Object.entries(allColors).forEach(([key, value]) => {
+
+    if (typeof value === 'string') {
+      newVars[`--${key}`] = value;
+    } 
+
+    else if (typeof value === 'object' && value !== null) {
+
+      Object.entries(value).forEach(([subKey, subValue]) => {
+
+        if (typeof subValue === 'string') {
+          newVars[`--${key}-${subKey}`] = subValue;
+        }
+      });
+    }
+  });
+
+  addBase({
+    ':root': newVars,
+  });
+}
 
 const config: Config = {
   content: [
@@ -27,7 +46,7 @@ const config: Config = {
         spotlight: {
           "0%": {
             opacity: "0",
-            transform: "translate(-72%, -62%) scale(0.5)",
+            transform: "translate(-72%, -62%) scale(0.6)",
           },
           "100%": {
             opacity: "1",
