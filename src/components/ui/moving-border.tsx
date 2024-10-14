@@ -60,7 +60,7 @@ export function Button({
           className
         )}
         style={{
-          borderRadius: `calc(${borderRadius} * 0.96)`,
+          borderRadius: `calc(${borderRadius} * 1.96)`,
         }}
       >
         {children}

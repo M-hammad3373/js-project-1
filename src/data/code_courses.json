@@ -1,0 +1,103 @@
+{
+  "courses":[
+    {
+        "id":1,
+        "title":"Game development ",
+        "slug":"game-development ",
+        "description":"Lorem ipsum ",
+        "price":99.99,
+        "instruction":"mail",
+        "isFeatured":"true",
+        "image":"h"
+
+    },
+    {
+        "id":1,
+        "title":"Game development ",
+        "slug":"game-development ",
+        "description":"Lorem ipsum ",
+        "price":99.99,
+        "instruction":"mail",
+        "isFeatured":"fasle",
+        "image":"h"
+
+    },
+     {
+        "id":1,
+        "title":"Game development ",
+        "slug":"game-development ",
+        "description":"Lorem ipsum ",
+        "price":99.99,
+        "instruction":"mail",
+        "isFeatured":"true",
+        "image":"h"
+
+    },
+    {
+        "id":1,
+        "title":"Game development ",
+        "slug":"game-development ",
+        "description":"Lorem ipsum ",
+        "price":99.99,
+        "instruction":"mail",
+        "isFeatured":"true",
+        "image":"h"
+
+    },
+     {
+        "id":1,
+        "title":"Game development ",
+        "slug":"game-development ",
+        "description":"Lorem ipsum ",
+        "price":99.99,
+        "instruction":"mail",
+        "isFeatured":"fasle",
+        "image":"h"
+
+    },
+     {
+        "id":1,
+        "title":"Game development ",
+        "slug":"game-development ",
+        "description":"Lorem ipsum ",
+        "price":99.99,
+        "instruction":"mail",
+        "isFeatured":"true",
+        "image":"h"
+
+    }, 
+    {
+        "id":1,
+        "title":"Game development ",
+        "slug":"game-development ",
+        "description":"Lorem ipsum ",
+        "price":99.99,
+        "instruction":"mail",
+        "isFeatured":"true",
+        "image":"h"
+
+    },
+     {
+        "id":1,
+        "title":"Game development ",
+        "slug":"game-development ",
+        "description":"Lorem ipsum ",
+        "price":99.99,
+        "instruction":"mail",
+        "isFeatured":"fasle",
+        "image":"h"
+
+     },
+     {
+        "id":1,
+        "title":"Game development ",
+        "slug":"game-development ",
+        "description":"Lorem ipsum ",
+        "price":99.99,
+        "instruction":"mail",
+        "isFeatured":"fasle",
+        "image":"h"
+
+     }
+  ]
+}

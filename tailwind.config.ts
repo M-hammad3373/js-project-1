@@ -52,6 +52,12 @@ const config: Config = {
             opacity: "1",
             transform: "translate(-50%,-40%) scale(1)",
           },
+          movingBorder: {
+            "0%": { border: '2px solid transparent', 'border-color': 'transparent' },
+            "50%": { border: '2px solid var(--foreground)', 'border-color': 'var(--foreground)' },
+            "100%": { border: '2px solid transparent', 'border-color': 'transparent' },
+          },
+  
         },
       },
     },
