@@ -4,6 +4,7 @@ import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
 
+
 const transition = {
   type: "spring",
   mass: 0.5,
@@ -92,7 +93,7 @@ export const ProductItem = ({
     <Link href={href} className="flex space-x-2">
       <Image
         src={src}
-        width={140}
+        width={120}
         height={70}
         alt={title}
         className="flex-shrink-0 rounded-md shadow-2xl"
@@ -116,6 +117,7 @@ export const HoveredLink = ({ children, ...rest }: any) => {
       className="text-neutral-700 dark:text-neutral-200 hover:text-black "
     >
       {children}
+      
     </Link>
   );
 };

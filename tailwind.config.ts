@@ -38,6 +38,26 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+         theme: {
+
+    // your existing config
+    extend: {
+      animation: {
+        "meteor-effect": "meteor 5s linear infinite",
+      },
+      
+      keyframes: {
+        meteor: {
+          "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
+          "70%": { opacity: "1" },
+          "100%": {
+            transform: "rotate(215deg) translateX(-500px)",
+            opacity: "0",
+          },
+        },
+      },
+    },
+  },
       },
       animation: {
         spotlight: "spotlight 2s ease .75s 1 forwards",
@@ -52,16 +72,31 @@ const config: Config = {
             opacity: "1",
             transform: "translate(-50%,-40%) scale(1)",
           },
-          movingBorder: {
-            "0%": { border: '2px solid transparent', 'border-color': 'transparent' },
-            "50%": { border: '2px solid var(--foreground)', 'border-color': 'var(--foreground)' },
-            "100%": { border: '2px solid transparent', 'border-color': 'transparent' },
-          },
+
+          // movingBorder: {
+          //   "0%": { border: '2px solid transparent', 'border-color': 'transparent' },
+          //   "50%": { border: '2px solid var(--foreground)', 'border-color': 'var(--foreground)' },
+          //   "100%": { border: '2px solid transparent', 'border-color': 'transparent' },
+          // },
   
         },
       },
     },
   },
-  plugins: [],
+  animation: {
+    "meteor-effect": "meteor 5s linear infinite",
+  },
+  keyframes: {
+    meteor: {
+      "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
+      "70%": { opacity: "1" },
+      "100%": {
+        transform: "rotate(215deg) translateX(-500px)",
+        opacity: "0",
+      },
+    },
+  },
+  
+  plugins: [addVariableForColors],
 };
 export default config;
