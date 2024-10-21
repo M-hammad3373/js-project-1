@@ -1,6 +1,6 @@
 "use client";
 import React from 'react';
-import { Meteors } from '../../components/ui/meteors';
+import { Meteors } from '@/components/ui/meteors';
 
 import Image from 'next/image';
 
@@ -9,7 +9,7 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-[#0a0e27] py-12 pt-36 relative overflow-hidden flex justify-center items-center">
       <Meteors number={30} className="opacity-70" />
-      <Meteors number={10000}  className='fil-auto'/>
+      
       
       <div className="flex bg-[#213343] bg-opacity-60 backdrop-filter backdrop-blur-lg rounded-lg shadow-lg overflow-hidden">
         <div className="p-8 transform transition-transform hover:scale-105">
@@ -45,8 +45,8 @@ const Contact = () => {
             height="1000"
             width="1000"
             className="h-40 w-full object-cover rounded-xl group-hover/card:shadow-xl"
-            alt="thumbnail"
-          />
+            alt="images"
+            />
           </div>
         </div>
       </div>

@@ -73,6 +73,7 @@ const config: Config = {
             transform: "translate(-50%,-40%) scale(1)",
           },
 
+
           // movingBorder: {
           //   "0%": { border: '2px solid transparent', 'border-color': 'transparent' },
           //   "50%": { border: '2px solid var(--foreground)', 'border-color': 'var(--foreground)' },
@@ -80,23 +81,27 @@ const config: Config = {
           // },
   
         },
+        meteor: {
+          '0%': { transform: "rotate(215deg) translateX(0)", opacity: "1" },
+          '70%': { opacity: "1" },
+          '100%': {
+            transform: "rotate(215deg) translateX(-500px)",
+            opacity: "0",
+          },
+        },
+        meteorFall: {
+          to: {
+            transform: "translateY(100vh)",
+            opacity: "0",
+          },
+        },
       },
     },
   },
-  animation: {
-    "meteor-effect": "meteor 5s linear infinite",
-  },
-  keyframes: {
-    meteor: {
-      "0%": { transform: "rotate(215deg) translateX(0)", opacity: "1" },
-      "70%": { opacity: "1" },
-      "100%": {
-        transform: "rotate(215deg) translateX(-500px)",
-        opacity: "0",
-      },
-    },
-  },
+
+    
+ 
   
-  plugins: [addVariableForColors],
+  plugins: [addVariableForColors ],
 };
 export default config;
