@@ -19,8 +19,8 @@ const Navbar = ({ className }: { className?: string }) => {
             <Link href="/courses"  onClick={() => setActive("Our Courses")}>Our Courses</Link>
         </MenuItem>
 
-        <MenuItem setActive={setActive} active={active} item="contact">
-            <Link href="/contact"  onClick={() => setActive("contact")}>contact</Link>
+        <MenuItem setActive={setActive} active={active} item="Contact">
+            <Link href="/Contact"  onClick={() => setActive("Contact")}>Contact</Link>
         </MenuItem>
         </Menu>
         
